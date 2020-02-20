@@ -1,0 +1,148 @@
+<html>
+    <head>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,500,700,900&display=swap" rel="stylesheet">
+
+    <link
+    rel="stylesheet"
+    href="prism-atom-dark.css"
+    type="text/css"
+    media="screen"
+  />
+
+  <script type="text/javascript" src="prism.js"></script>
+  <script type="text/javascript" src="prism.ruby.js"></script>
+
+</head>
+
+    <body>
+        <div class="about-container">
+        <div class="about">
+            <img src="me.jpg" class="me" />
+
+            <h1>Keeley Gibbs</h1>
+
+
+            <h2>WEB DEVELOPER</h2>
+
+            <hr class="grey"/>
+            <p class="bio">
+                Keeley Gibbs is a full time student with a set date of May 2020 to graduate from the University of Arizona. She is studying Information Research and eSociety with a minor in journalism. In November of 2019 she will have completed her certification in web development and software engineering through the University of Arizona.
+
+            </p>
+        </div>
+        </div>
+        <h3>Code Snippets</h3>
+        <hr class="yellow">
+
+        <div class="box">
+            <h4>Temperature Conversion</h4>
+            <p>
+                This Ruby program will prompt the user for a temperature
+                in degrees Celsius and let the user know what the
+                corresponding temperature is in Fahrenheit.
+            </p>
+        </div>
+
+        <div class="box">
+        <pre><code class="language-ruby">
+    print &quot;Enter a ceclius value: &quot;
+        celcius = gets 
+        fahrenheit = (celcius.to_i * 9 / 5) +32
+    print &quot;The conversion to fahrenheit is: &quot;
+    print fahrenheit
+    puts &quot; degrees.&quot; </code></pre>
+        </div>
+
+        <br class="clear" />
+
+        <div class="box">
+            <pre><code class="language-ruby">
+    print &quot;Enter a number: &quot;
+n = gets.chomp.to_i
+
+def lop_off(n)
+    right_most_digit = n % 10
+    if n == 11 || n == 12 || n == 13
+        return puts &quot;#{n}th&quot;
+    end
+    right_most_digit = n % 10
+    if right_most_digit == 1
+        return puts &quot;#{n}st&quot;
+
+    elsif right_most_digit == 2
+        return puts &quot;#{n}nd&quot;
+
+    elsif right_most_digit == 3 
+        return puts &quot;#{n}rd&quot;
+
+    elsif right_most_digit &gt; 3
+        return puts &quot;#{n}th&quot;
+    end
+end 
+
+lop_off(n)
+</code></pre>
+        </div>
+
+        <div class="box">
+            <h4>Ordinal Challenge</h4>
+            <p>
+            This Ruby program will convert a plain number
+            to the ordinal of the number. So for example,
+            if the user enters 2, it will display 2nd, if
+            the user enters 3, it will display 3rd, etc.
+            </p>
+        </div>
+
+        <br class="clear" />
+
+        <div class="box">
+            <h4>Foobar</h4>
+            <p>
+            This Ruby program is an adaptation of a classic technical
+            interview problem which displays sequences
+            of the Foobar pattern.
+            </p>
+        </div>
+
+        <div class="box">
+            <pre><code class="language-ruby">
+print &quot;How many digits would you like to see? &quot;
+    digits = gets.chomp.to_i
+
+def num(n)
+    if n % 3 == 0 &amp;&amp; n % 5 == 0
+    puts &quot;Foobar&quot;
+
+    elsif n % 3 == 0
+        puts &quot;Foo&quot;
+
+    elsif n % 5 == 0
+        puts &quot;bar&quot;
+        
+    else 
+        puts n
+    end 
+end
+
+
+(1..digits).each do |n|
+    num(n) 
+end 
+</code></pre>
+        </div>
+
+        <br class="clear" />
+
+    <h3>Web Apps</h3>
+    <hr class="yellow" />
+
+    <div class="box">
+      <h4>Quote Generator</h4>
+      <img src="splurty.png" class="full-width"/>
+    </div>
+    </body>
+
+</html>
